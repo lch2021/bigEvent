@@ -3,6 +3,8 @@ $(function() {
     // 从 layui 中提取模块
     const { form, layer } = layui
 
+
+
     // 1. 表单校验
     form.verify({
         pass: [
@@ -34,6 +36,8 @@ $(function() {
 
                 //提示用户
                 layer.msg('修改密码成功!')
+
+                window.parent.location.href = '/login.html'
             })
     })
 
