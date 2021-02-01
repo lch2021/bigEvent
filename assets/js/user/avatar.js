@@ -41,10 +41,10 @@ $(function() {
 
         //5.点击确定，上传图片到服务器
         $('#save-btn').click(function() {
-            const dataUrl = $image.cropper('getCroppedCanvas', {
-                width: 100,
-                height: 100
-            }).toDataURL('image/jpeg')
+            const dataUrl = $image.cropper('getCroppedCanvas', { //github 文档
+                    width: 100,
+                    height: 100
+                }).toDataURL('image/jpeg') //转换为64位图片
             console.log(dataUrl);
 
             //5.2手动构建查询参数
